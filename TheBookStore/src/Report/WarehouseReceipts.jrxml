@@ -1,0 +1,243 @@
+<!-- Created with Jaspersoft Studio version 7.0.0.final using JasperReports Library version 7.0.0-b478feaa9aab4375eba71de77b4ca138ad2f62aa  -->
+<jasperReport name="Wh_1" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9318ad0f-ea76-41c9-b2c0-f543a7a4bc02">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="SQL Server"/>
+	<dataset name="Dataset1" uuid="10b0d59c-6955-48e3-bc78-ccda825f5069">
+		<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="SQL Server"/>
+		<query language="SQL"><![CDATA[SELECT wh.ID AS ID, prv.ProviderName AS ProviderName, wh.ReceivingDate AS ReceivingDate, wh.CurrentStatus AS CurrentStatusWh, wh.TotalCost AS TotalCost, whd.ProductID AS ProductID, prd.ProductName, whd.Quantity AS Quantity, whd.ReceivingPrice AS ReceivingPrice, whd.CurrentStatus AS CurrentStatus FROM WarehouseReceiptDetails whd JOIN WarehouseReceipts wh ON wh.ID = whd.WarehouseReceiptID JOIN Products prd ON whd.ProductID = prd.ID JOIN Providers prv ON wh.ProviderID = prv.ID WHERE wh.ID = 'YY9QQQPS81Z86YZ2VXZS']]></query>
+		<field name="ID" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="ID"/>
+			<property name="com.jaspersoft.studio.field.label" value="ID"/>
+		</field>
+		<field name="ProviderName" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="ProviderName"/>
+			<property name="com.jaspersoft.studio.field.label" value="ProviderName"/>
+		</field>
+		<field name="ReceivingDate" class="java.sql.Timestamp">
+			<property name="com.jaspersoft.studio.field.name" value="ReceivingDate"/>
+			<property name="com.jaspersoft.studio.field.label" value="ReceivingDate"/>
+		</field>
+		<field name="CurrentStatusWh" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="CurrentStatusWh"/>
+			<property name="com.jaspersoft.studio.field.label" value="CurrentStatusWh"/>
+		</field>
+		<field name="TotalCost" class="java.lang.Double">
+			<property name="com.jaspersoft.studio.field.name" value="TotalCost"/>
+			<property name="com.jaspersoft.studio.field.label" value="TotalCost"/>
+		</field>
+		<field name="ProductID" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="ProductID"/>
+			<property name="com.jaspersoft.studio.field.label" value="ProductID"/>
+		</field>
+		<field name="ProductName" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="ProductName"/>
+			<property name="com.jaspersoft.studio.field.label" value="ProductName"/>
+		</field>
+		<field name="Quantity" class="java.lang.Integer">
+			<property name="com.jaspersoft.studio.field.name" value="Quantity"/>
+			<property name="com.jaspersoft.studio.field.label" value="Quantity"/>
+		</field>
+		<field name="ReceivingPrice" class="java.lang.Double">
+			<property name="com.jaspersoft.studio.field.name" value="ReceivingPrice"/>
+			<property name="com.jaspersoft.studio.field.label" value="ReceivingPrice"/>
+		</field>
+		<field name="CurrentStatus" class="java.lang.String">
+			<property name="com.jaspersoft.studio.field.name" value="CurrentStatus"/>
+			<property name="com.jaspersoft.studio.field.label" value="CurrentStatus"/>
+		</field>
+	</dataset>
+	<query language="sql"><![CDATA[SELECT wh.ID AS ID, prv.ProviderName AS ProviderName, wh.ReceivingDate AS ReceivingDate, wh.CurrentStatus AS CurrentStatusWh, wh.TotalCost AS TotalCost, whd.ProductID AS ProductID, prd.ProductName, whd.Quantity AS Quantity, whd.ReceivingPrice AS ReceivingPrice, whd.CurrentStatus AS CurrentStatus FROM WarehouseReceiptDetails whd JOIN WarehouseReceipts wh ON wh.ID = whd.WarehouseReceiptID JOIN Products prd ON whd.ProductID = prd.ID JOIN Providers prv ON wh.ProviderID = prv.ID WHERE wh.ID = 'GHWK1XE3DU496N4M']]></query>
+	<field name="ID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="ID"/>
+	</field>
+	<field name="ProviderName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ProviderName"/>
+		<property name="com.jaspersoft.studio.field.label" value="ProviderName"/>
+	</field>
+	<field name="ReceivingDate" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.name" value="ReceivingDate"/>
+		<property name="com.jaspersoft.studio.field.label" value="ReceivingDate"/>
+	</field>
+	<field name="CurrentStatusWh" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="CurrentStatusWh"/>
+		<property name="com.jaspersoft.studio.field.label" value="CurrentStatusWh"/>
+	</field>
+	<field name="TotalCost" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="TotalCost"/>
+		<property name="com.jaspersoft.studio.field.label" value="TotalCost"/>
+	</field>
+	<field name="ProductID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ProductID"/>
+		<property name="com.jaspersoft.studio.field.label" value="ProductID"/>
+	</field>
+	<field name="ProductName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ProductName"/>
+		<property name="com.jaspersoft.studio.field.label" value="ProductName"/>
+	</field>
+	<field name="Quantity" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="Quantity"/>
+		<property name="com.jaspersoft.studio.field.label" value="Quantity"/>
+	</field>
+	<field name="ReceivingPrice" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="ReceivingPrice"/>
+		<property name="com.jaspersoft.studio.field.label" value="ReceivingPrice"/>
+	</field>
+	<field name="CurrentStatus" class="java.lang.String">
+	<property name="com.jaspersoft.studio.field.name" value="CurrentStatus"/>
+		<property name="com.jaspersoft.studio.field.label" value="CurrentStatus"/>
+	</field>
+	<background splitType="Stretch"/>
+	<title height="109" splitType="Stretch">
+		<element kind="staticText" uuid="4e099eac-cb6b-40f9-abac-6071d5fd8027" x="193" y="19" width="169" height="64" forecolor="#FF0905" fontSize="24.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[PHIẾU NHẬP]]></text>
+		</element>
+		<element kind="staticText" uuid="268b6faf-1ab4-44ab-a2ed-747fc471791d" x="384" y="9" width="46" height="30" fontSize="10.0" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[NGÀY:]]></text>
+		</element>
+		<element kind="textField" uuid="ca27b980-0d9a-45f4-8aed-0a45e7e1ee99" x="430" y="9" width="64" height="30" fontName="Arial" pattern="dd/MM/yyyy" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[$F{ReceivingDate}]]></expression>
+		</element>
+		<element kind="rectangle" uuid="805d98ab-4f7d-4a64-aa72-28dc57e715d5" x="0" y="95" width="550" height="1"/>
+	</title>
+	<pageHeader height="104" splitType="Stretch">
+		<element kind="staticText" uuid="41d12c3c-57a3-43ae-ad6b-431f175e8174" x="74" y="8" width="67" height="30" fontName="Arial" fontSize="11.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[MÃ PHIẾU:]]></text>
+		</element>
+		<element kind="staticText" uuid="3811d066-16bf-44c9-a93b-ac6e541a9875" x="76" y="50" width="93" height="30" fontName="Arial" fontSize="11.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[NHÀ CUNG CẤP:]]></text>
+		</element>
+		<element kind="staticText" uuid="c89f9159-a022-4e7e-8bb5-a6d87193d6f2" x="342" y="9" width="75" height="30" fontName="Arial" fontSize="11.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[TRẠNG THÁI:]]></text>
+		</element>
+		<element kind="textField" uuid="15646805-172c-4f8d-9ff6-fe186d8c09d3" x="146" y="8" width="129" height="30" fontName="DejaVu Sans Mono" fontSize="11.0" hTextAlign="Left" vTextAlign="Middle">
+			<expression><![CDATA[$F{ID}]]></expression>
+		</element>
+		<element kind="textField" uuid="cf8f0102-3d64-4d14-b653-2e58a5fa3320" x="176" y="50" width="281" height="30" fontName="DejaVu Sans Mono" fontSize="11.0" hTextAlign="Left" vTextAlign="Middle">
+			<expression><![CDATA[$F{ProviderName}]]></expression>
+		</element>
+		<element kind="textField" uuid="c47341ca-bb1c-47d6-b0b6-285c61b8a2f8" x="420" y="9" width="133" height="30" fontName="DejaVu Sans Mono" fontSize="11.0" hTextAlign="Left" vTextAlign="Middle">
+			<expression><![CDATA[$F{CurrentStatusWh}]]></expression>
+		</element>
+	</pageHeader>
+	<columnHeader height="40" splitType="Stretch">
+		<element kind="staticText" uuid="5d2fdd2c-3084-4496-9844-0fde48f43182" x="77" y="8" width="90" height="30" fontSize="10.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Mã sản phẩm]]></text>
+			<box>
+			<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="d133381d-b70a-43f5-ac01-fed8a7b72d33" x="167" y="8" width="80" height="30" fontSize="10.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Tên sản phẩm]]></text>
+			<box>
+				<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="5bea23d8-c1cb-444e-964d-9b42ce02df19" x="247" y="8" width="70" height="30" fontSize="10.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Số lượng]]></text>
+			<box>
+				<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="b65caca8-02ce-453d-8470-9bfde2e4ff43" x="317" y="8" width="80" height="30" fontSize="10.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Đơn giá]]></text>
+			<box>
+				<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="239037a8-6be7-44d0-b092-ba406aed4769" x="397" y="8" width="81" height="30" fontSize="10.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Trạng thái]]></text>
+			<box>
+				<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+			</box>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<element kind="textField" uuid="0f21b5c8-555c-44f7-91e0-ab1c7970be7f" x="77" y="-2" width="90" height="30" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{ProductID}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2d4ecc34-69e7-470a-b5fb-5f9ed56de9b3"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="fea4c837-0a8d-477a-9855-61cbec20d9c8" x="167" y="-2" width="80" height="30" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{ProductName}]]></expression>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="711ec001-3ae4-419b-b2f8-0abb934865e0" x="247" y="-2" width="70" height="30" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{Quantity}]]></expression>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="a570c932-d946-48b1-9083-19dcdc5657bf" x="317" y="-2" width="80" height="30" pattern="###,### 'VNĐ'" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{ReceivingPrice}]]></expression>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="9f0a4ad8-dcd9-4985-a172-fd8f984aa56b" x="397" y="-2" width="81" height="30" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{CurrentStatus}]]></expression>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+			</element>
+		</band>
+	</detail>
+	<summary height="29">
+		<element kind="staticText" uuid="7e5d2fd8-ba6f-44ed-883e-64f95a4cedde" x="77" y="-2" width="320" height="30" forecolor="#FF0905" fontSize="10.0" bold="true" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[Tổng tiền]]></text>
+			<box>
+				<pen lineColor="#0F0F0F"/>
+				<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000003"/>
+				<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000003"/>
+				<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#04040A"/>
+				<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000003"/>
+			</box>
+		</element>
+		<element kind="textField" uuid="2e3b2471-2636-4695-bae4-4cbbc671051a" x="397" y="-2" width="81" height="30" forecolor="#024D05" evaluationTime="Column" pattern="###,### 'VNĐ'" hTextAlign="Center" vTextAlign="Middle">
+			<expression><![CDATA[$F{TotalCost}]]></expression>
+			<box>
+				<pen lineColor="#0F0F0F"/>
+				<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000003"/>
+				<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000003"/>
+				<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#04040A"/>
+				<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000003"/>
+			</box>
+		</element>
+	</summary>
+</jasperReport>
